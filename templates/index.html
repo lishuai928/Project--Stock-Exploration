@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang=e ng>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock</title>
+
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+</head>
+
+<body>
+    <!-- 6.1-->
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-4">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="patient-form-input">Stock Symbol</label>
+                        <input id="patient-form-input" class="form-control" name="patient-form" type="text" placeholder="GOOG">
+                    </div>
+                    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <!-- Place holder -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="plot" style="height: 600px; min-width: 310px"></div>
+            </div>
+        </div>
+
+        <div class="row header">
+            <form>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="stock">
+                            Select three stocks to compare
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" id="stock1" name="patient-form1" type="text" placeholder="GOOG">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" id="stock2" name="patient-form2" type="text" placeholder="FB">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" id="stock3" name="patient-form" type="text3" placeholder="MSFT">
+                    </div>
+                    <div class="col-md-3">
+                        <button id="submit1" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="plot2" style="height: 600px; min-width: 310px"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/app.js"></script>
+    <script src="static/js/app2.js"></script>
+    <script src='static/js/config.js'></script>
+</body>
+
+</html>
